@@ -7,23 +7,39 @@
 //Teste Djalma Moreira dos Santos
 
 int main() {
+    int carta = 1;
     char estado = 'X';
-    char cod_cidade[3] = "X01";
-    char nome_cidade[12] =  "XXX";
-    int populacao = 123;
+    char codigo[3] = "X01";
+    char nome[12] = "XXX";
+    float populacao = 123;
     float area = 111.22;
     float pib = 677.22;
     int pt_turisticos = 43;
     printf("Desafio Cartas Super Trunfo!\n");
-    printf("Carta 1:\n");
+    printf("Digite o número da carta: ");
+    scanf("%f" , &carta);
+    printf("Digite a letra do estado: ");
+    scanf("%s" , &estado);
+    printf("Digite o código do estado: ");
+    scanf("%s" , &codigo);
+    printf("Digite o nome da cidade: ");
+    scanf("%s" , nome);
+    printf("Digite o número de habitantes: ");
+    scanf("%f" , &populacao);
+    printf("Digite a área da cidade: ");
+    scanf("%f" , &area);
+    printf("Digite o pib: ");
+    scanf("%f" , &pib);
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf(" %i" , &pt_turisticos);
+    printf("O número da carta é: %d\n" , carta);
     printf("O estado é: %c\n", estado);
-    printf("O código da cidade é: %s\n", cod_cidade);
-    printf("O nome da cidade é: %s\n" , nome_cidade);
+    printf("O código da cidade é: %s\n", codigo);
+    printf("O nome da cidade é: %s\n" , nome);
     printf("A populacão é: %d\n:" , populacao);
-    printf("A area é: %f\n" , area);
-    printf("O pib é:%f\n" , pib);
-    printf("A quantidade de pontos turísticos são:%d\n" , pt_turisticos);
- 
+    printf("A area é: %.2f\n" , area);
+    printf("O pib é: %.2f\n" , pib);
+    printf("A quantidade de pontos turísticos são: %d\n" , pt_turisticos);
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     
